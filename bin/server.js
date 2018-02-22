@@ -1,6 +1,5 @@
 'use strict'
 
-//Import's teste
 const app = require('../src/app');
 const debug = require('debug')('project5:server');
 const http = require('http');
@@ -10,10 +9,12 @@ app.set('port', port);
 
 const server = http.createServer(app);
 
-server.listen(port);
+server.listen(port, function(){
+    console.log('API rodando na porta ' + port);
+});
 server.on('error', onError);
 server.on('listening', onListening);
-console.log('API rodando na porta ' + port);
+
 
 function normalizePort(val) {
 
