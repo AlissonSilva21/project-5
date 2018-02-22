@@ -4,7 +4,7 @@ const app = require('../src/app');
 const debug = require('debug')('project5:server');
 const http = require('http');
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 const server = http.createServer(app);
@@ -14,7 +14,11 @@ server.listen(port, function(){
 });
 server.on('error', onError);
 server.on('listening', onListening);
+<<<<<<< HEAD:bin/server.js
 
+=======
+console.log('Server Side Success !' + port);
+>>>>>>> develop:server-side/bin/server.js
 
 function normalizePort(val) {
 
