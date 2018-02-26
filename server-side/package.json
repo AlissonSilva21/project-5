@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/leonardograndi/project-5#readme",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
     "debug": "^3.1.0",
     "express": "^4.16.2",
     "http": "0.0.0",
+    "jsonwebtoken": "^8.1.1",
     "mongoose": "^5.0.6"
   },
   "devDependencies": {
