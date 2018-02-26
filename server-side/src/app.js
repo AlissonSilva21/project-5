@@ -18,5 +18,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', route);
 
 require('./controllers/authController')(app);
+require('./controllers/controllerApplication')(app);
 
 module.exports = app;
