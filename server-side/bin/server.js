@@ -10,7 +10,7 @@ app.set('port', port);
 const server = http.createServer(app);
 
 server.listen(port, function(){
-    console.log('API rodando na porta ' + port);
+    console.log('Server running on the port: '+ port);
 });
 server.on('error', onError);
 server.on('listening', onListening);
